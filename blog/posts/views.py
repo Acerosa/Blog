@@ -14,7 +14,7 @@ class ProductListView(ListView):
 
 class ProductDetailView(DetailView):
     model = Product
-    template_name = 'myapp/pDetails.html'
+    template_name = 'myapp/index2.html'
     context_object_name = 'product'
 
 class ProductUpdateView(UpdateView):
