@@ -14,14 +14,10 @@ class ProductListView(ListView):
 
 class ProductDetailView(DetailView):
     model = Product
-    template_name = 'myapp/index2.html'
+    template_name = 'myapp/pDetails.html'
     context_object_name = 'product'
 
-class ProductUpdateView(UpdateView):
-    model = Product
-    form_class = ProductForm
-    template_name = 'myapp/edit.html'
-    success_url = reverse_lazy('product_list')
+
 
 
 
