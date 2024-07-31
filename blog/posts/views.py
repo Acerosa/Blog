@@ -12,7 +12,10 @@ class ProductListView(ListView):
     template_name = 'myapp/index.html'
     context_object_name = 'products'
 
-
+class ProductDetailView(DetailView):
+    model = Product
+    template_name = 'myapp/pDetails.html'
+    context_object_name = 'product'
 
 
 
